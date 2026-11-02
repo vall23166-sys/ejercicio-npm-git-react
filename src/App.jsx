@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import PlanetScene from './PlanetScene'
-import confetti from 'canvas-confetti'; // <--- Import del confetti
+import confetti from 'canvas-confetti';
 
 function App() {
   const [count, setCount] = useState(0)
