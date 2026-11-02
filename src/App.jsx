@@ -3,12 +3,18 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import PlanetScene from './PlanetScene'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      {/* 2. Escena 3D de fondo */}
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -1, pointerEvents: 'none' }}>
+        <PlanetScene />
+      </div>
+
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
